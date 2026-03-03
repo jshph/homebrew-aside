@@ -1,15 +1,14 @@
 class Aside < Formula
   desc "Record mic + system audio side-by-side with a memo, then distill into structured notes"
   homepage "https://github.com/jshph/aside"
-  url "https://github.com/jshph/aside/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "65e3aa7b08fb8a71e262dc57d9237bf57d5c47fbd57fb4b073b654762b47567c"
+  url "https://github.com/jshph/aside/releases/download/v0.1.1/aside-0.1.1-aarch64-apple-darwin.tar.gz"
+  sha256 "PLACEHOLDER"
   license "GPL-3.0-or-later"
 
   depends_on :macos
-  depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "aside"
     bin.install "aside.py"
     prefix.install "SKILL.md"
     prefix.install "install.sh"
