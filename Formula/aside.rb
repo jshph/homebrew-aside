@@ -1,8 +1,8 @@
 class Aside < Formula
   desc "Record mic + system audio side-by-side with a memo, then distill into structured notes"
   homepage "https://github.com/jshph/aside"
-  url "https://github.com/jshph/aside/releases/download/v0.1.1/aside-0.1.1-aarch64-apple-darwin.tar.gz"
-  sha256 "PLACEHOLDER"
+  url "https://github.com/jshph/aside/releases/download/v0.1.2/aside-0.1.2-aarch64-apple-darwin.tar.gz"
+  sha256 "9092cca96027bf4cf8aa559748262a3f6674ecff9c0f514f37e08ac1b4184f5a"
   license "GPL-3.0-or-later"
 
   depends_on :macos
