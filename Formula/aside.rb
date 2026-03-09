@@ -3,14 +3,12 @@ class Aside < Formula
   homepage "https://github.com/jshph/aside"
   url "https://github.com/jshph/aside/releases/download/v0.2.0/aside-0.2.0-aarch64-apple-darwin.tar.gz"
   sha256 "ec5cc9822178fc6021dbbd8e573384c2f3c95cd9dc77440d3ad15b6e9778515a"
-  license "GPL-3.0-or-later"
+  license "Apache-2.0"
 
   depends_on :macos
 
   def install
     bin.install "aside"
-    bin.install "aside.py"
-    prefix.install "SKILL.md"
     prefix.install "install.sh"
   end
 
